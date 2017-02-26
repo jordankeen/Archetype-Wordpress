@@ -1,0 +1,34 @@
+footer {
+	clear: both;
+}
+.page-footer {
+	background: $black;
+	padding: 30px;
+	.section-container,
+	.footer-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	p {
+		text-transform: uppercase;
+		font-size: 10px;
+		letter-spacing: 2px;
+		color: lightgrey;
+	}
+}
+.footer-social {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	a {
+		color: lightgrey;
+		font-size: 18px;
+		margin: 0 5px;
+		transitions: color 0.3s;
+		&:hover {
+			color: white;
+		}
+	}
+}

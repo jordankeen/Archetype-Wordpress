@@ -1,0 +1,79 @@
+/*!
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+
+// Colour Variables
+$black: #212127;
+
+@import 'normalize';
+@import 'typography';
+@import 'front-page';
+@import 'contact';
+@import 'about';
+@import 'blog';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+@import 'owl.theme';
+@import 'owl.carousel';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+body {
+	color: #2F2F33;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+.section-container {
+	margin: 0 auto;
+	max-width: 925px;
+	padding: 0 20px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+.full {
+	width: 100%;
+}
+.page-title {
+	background: #212127;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		padding: 70px 0;
+		color: white;
+		letter-spacing: 3px;
+		font-size: 28px;
+		text-transform: uppercase;
+	}
+}
+.black-background {
+	background-color: $black;
+	.dot-overlay {
+		background: url("../project-7-theme/images/dot.png");
+		width: 100%;
+	}
+}
+
+@import 'media-query';

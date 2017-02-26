@@ -1,0 +1,43 @@
+.about-section {
+	width: 100%;
+	padding: 100px 0;
+	.about-container {
+		max-width: 925px;
+		margin: 0 auto;
+		padding: 0 15px;
+		text-align: center;
+		h2 {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		p {
+			max-width: 700px;
+			margin: 20px auto;
+		}		
+	}
+}
+.about-images {
+	display: flex;
+	justify-content: space-between;
+	.about-image {
+		width: 23%;
+		img {
+			width: 100%;
+			max-height: 300px;
+		}
+		.portrait {
+			background-size: cover;
+			background-position: center;
+			height: 300px;
+		}
+		p {
+			margin: 6px auto;
+		}
+	}
+	h4 {
+		font-family: 'Merriweather', serif;
+		font-size: 18px;
+		font-weight: 500;
+		margin-top: 5px;
+	}
+}

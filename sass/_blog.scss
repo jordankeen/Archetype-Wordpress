@@ -1,0 +1,99 @@
+.content-sidebar {
+	margin: 50px auto 0;
+	max-width: 1080px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.blog-content {
+	margin-right: 8%;
+	// float: left;
+	width: 65%;
+}
+.blog-post {
+	margin: 25px 0 50px;
+	.entry-content {
+		margin-bottom: 10px;
+	}
+}
+.blog-image {
+	width: 100%;
+	img {
+		height: 50%;
+		width: 100%;
+	}
+}
+.entry-title {
+	margin: 25px 0 10px;
+}
+.entry-title,
+.entry-title a {
+	color: #212127;
+	font-size: 28px;
+	font-weight: 600;
+	font-family: 'Merriweather', serif;	
+}
+
+.date-comments {
+	display: flex;
+	.date,
+	.entry-meta a {
+		margin-right: 8px;
+		font-size: 10px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	 a {
+		font-size: 10px;
+		letter-spacing: 2px;
+		color: #428BCA;
+		text-transform: uppercase;
+		transition: all 0.4s;
+		&:hover {
+			color: black;
+		}
+	}
+}
+.author-category {
+	display: flex;
+	margin: 10px 0;
+	.author {
+		margin-right: 8px;
+	}
+	p {
+		color: black;
+		font-size: 10px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	a {
+		font-weight: 300;
+		color: #aaa;
+		transition: all 0.4s;
+		&:hover {
+			color: black;
+		}
+	}
+}
+.entry-content {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.navigation a, 
+.logged-in-as a {
+	margin-top: 10px;
+	font-weight: 300;
+	color: #aaa;
+	transition: all 0.4s;
+	&:hover {
+		color: black;
+	}
+}
+.comment-respond {
+	h3 {
+		font-family: 'Merriweather', serif;
+		font-size: 18px;
+		font-weight: 300;
+	}
+}

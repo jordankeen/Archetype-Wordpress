@@ -1,0 +1,7 @@
+body: Open-Sans
+
+hero heading: Monserrat
+
+h1 - h6: Merriweather
+
+navbar <a> tags: Montserrat
