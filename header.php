@@ -17,23 +17,33 @@
 		<!-- Nav logo -->
 		<?php if( is_home() && get_option('page_for_posts') ) { ?>
         	<?php $image = get_field('nav_logo', get_page( get_option('page_for_posts') )); ?>
-    		<img src="<?php echo $image['sizes']['medium']?>">
+        	<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+    			<img src="<?php echo $image['sizes']['medium']?>">
+    		</a>
 
     	<?php } else if (is_single() && get_option('page_for_posts') ) { ?>
     		<?php $image = get_field('nav_logo', get_page( get_option('page_for_posts') )); ?>
-    		<img src="<?php echo $image['sizes']['medium']?>">
+    		<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+    			<img src="<?php echo $image['sizes']['medium']?>">
+    		</a>
 
     	<?php } else if (is_tag() && get_option('page_for_posts') ) { ?>
     		<?php $image = get_field('nav_logo', get_page( get_option('page_for_posts') )); ?>
-    		<img src="<?php echo $image['sizes']['medium']?>">
+    		<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+    			<img src="<?php echo $image['sizes']['medium']?>">
+    		</a>
 
     	<?php } else if (is_category() && get_option('page_for_posts') ) { ?>
     		<?php $image = get_field('nav_logo', get_page( get_option('page_for_posts') )); ?>
-    		<img src="<?php echo $image['sizes']['medium']?>">
+    		<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+    			<img src="<?php echo $image['sizes']['medium']?>">
+    		</a>
 
     	<?php } else { ?>
         	<?php $image = get_field('nav_logo') ?>
-        	<img src="<?php echo $image['sizes']['medium']?>">
+        	<a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+        		<img src="<?php echo $image['sizes']['medium']?>">
+        	</a>
       	<?php } ?>
 
 		<?php wp_nav_menu( array(
